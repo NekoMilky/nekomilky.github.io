@@ -8,8 +8,10 @@
         <script type="text/javascript" src="js/script.js"></script>
         <link rel="icon" href="source/img/icon.ico" type ="image/x-icon">
     </head>
-    <body id="body">
-        <div id="mainbody">
+    <body>
+        <div id="mainbody" style="position: absolute;left: 0;top: 0;width: 100%;height: 100%;">
+            <!-- 背景图片 -->
+            <div id="mainpic" style="background-attachment: fixed;position: fixed;left: 0;top: 0;width: 100%;height: 100%;"></div>
             <!-- 个人简介 -->
             <div id="mainbox" class="mainbox" style="position: fixed;top: 15%;left: 15%;width: 20%;height: 70%;">
                 <input style="position: absolute;top: 2%;right: 2%;" required onclick="toggledaynight()" type="checkbox" id="toggledaynight" class="toggle-button" title="切换日夜">
@@ -53,6 +55,51 @@
                     <tr><td class="projleft"><img class="projimg" src="source/img/project/0.png"></td></tr>
                 </table>
             </div>
+        </div>
+        <div id="mainbody-m" style="position: absolute;left: 0;top: 0;width: 100%;height: 100%;">
+            <!-- 背景图片 -->
+            <div id="mainpic-m" style="background-attachment: scroll;position: fixed;left: 0;top: 0;width: 100%;height: 100%;"></div>
+            <!-- 个人简介 -->
+            <div id="mainbox-m" class="mainbox" style="position: absolute;top: 10%;left: 35%;width: 30%;height: 70%;">
+                <input style="position: absolute;top: 2%;right: 2%;" required onclick="toggledaynightmobile()" type="checkbox" id="toggledaynight-m" class="toggle-button" title="切换日夜">
+                <br>
+                <table style="width: 100%;height: 30%;">
+                    <tr><td><img src="source/img/photo.png" style="width: 30%;height: auto;"></td></tr>
+                    <tr><td><h1 style="font-size: 190%;font-weight: bold;">NekoMilky</h1></td></tr>
+                    <tr><td><h1 style="font-size: 120%;font-weight: bold;">ねぇ、今から晴れるよ!</h1></td></tr>
+                    <tr><td><br></td></tr>
+                    <tr><td><hr id="hr-m"></td></tr>
+                </table>
+                <br>
+                <table style="width: 100%;height: 30%;">
+                    <tr><td class="info"><info>年龄</info></td><td class="info"><info>3</info></td></tr>
+                    <tr><td class="info"><info>生日</info></td><td class="info"><info>01/19</info></td></tr>
+                    <tr><td class="info"><info>星座</info></td><td class="info"><img src="source/img/constellation.png" alt="摩羯" style="width: 9%;height: auto;"><info>摩羯</info></td></tr>
+                    <tr><td class="info"><info>性别</info></td><td class="info"><img src="source/img/gender.png" alt="女" style="width: 9%;height: auto;"><info>女</info></td></tr>
+                    <tr><td class="info"><info>来自</info></td><td class="info"><info>地球</info></td></tr>
+                    <tr><td class="info"><info>职业</info></td><td class="info"><info>学生</info></td></tr>
+                </table>
+                <br>
+                <table style="width: 100%;height: auto;position: absolute;bottom: 0;">
+                    <tr><td><copyright>Copyright © 2023 NekoMilky. All rights reserved.</copyright></td></tr>
+                    <tr><td><copyright>Powered by NekoMilky.</copyright></td></tr>
+                </table>
+            </div>
+            <!-- 项目 -->
+            <div id="proj-m" style="position: absolute;left:30%;top: 85%;width: 40%;height: auto;">
+                <h1 style="font-size: 200%;font-weight: bold;">PORTFOLIO!</h1>
+                <h1 style="font-size: 350%;font-weight: bold;position: absolute;left: 10%;">Great minds have purpose.</h1>
+                <table class="projt">
+                    <tr><td class="projleft"><img class="projimg" src="source/img/project/0.png"></td></tr>
+                    <tr><td class="projleft"><img class="projimg" src="source/img/project/0.png"></td></tr>
+                    <tr><td class="projleft"><a href="https://www.mcbbs.net/thread-1156258-1-1.html" target="_blank" rel="noopener noreferrer"><img class="projimg" src="source/img/project/1.gif"></a></td><td class="projright"><proj>密室杀手<br>Murder Mystery</proj><br><br><tag>Minecraft</tag><br><tag>数据包</tag><br><tag>小游戏</tag><br><tag>1.16~1.19.4</tag></td></tr>
+                    <tr><td class="projleft"><proj>太阳视运动模拟器<br>Solar Visual Motion Simulator</proj><br><br><tag>Scratch</tag><br><tag>模拟</tag><br><tag>地理</tag><br><tag>小程序</tag></td><td class="projright"><a href="https://aerfaying.com/Projects/211369" target="_blank" rel="noopener noreferrer"><img class="projimg" src="source/img/project/2.gif"></a></td></tr>
+                    <tr><td class="projleft"><a href="https://www.mcbbs.net/thread-1364116-1-1.html" target="_blank" rel="noopener noreferrer"><img class="projimg" src="source/img/project/3.gif"></a></td><td class="projright"><proj>更真实的昼夜交替<br>Realistic Daylight Cycle</proj><br><br><tag>Minecraft</tag><br><tag>数据包</tag><br><tag>模拟</tag><br><tag>地理</tag><br><tag>1.13.2+</tag></td></tr>
+                    <tr><td class="projleft"><proj>问卷前端&后端<br>Questionnaire Front-End&Back-End</proj><br><br><tag>HTML</tag><br><tag>CSS</tag><br><tag>JavaScript</tag><br><tag>问卷</tag></td><td class="projright"><a href="questionnaire/index.html" target="_blank" rel="noopener noreferrer"><img class="projimg" src="source/img/project/4.gif"></a></td></tr>
+                    <tr><td class="projleft"><a href="https://www.mcbbs.net/thread-1265753-1-1.html" target="_blank" rel="noopener noreferrer"><img class="projimg" src="source/img/project/5.gif"></a></td><td class="projright"><proj>可投掷刀<br>Throwable Knives</proj><br><br><tag>Minecraft</tag><br><tag>数据包</tag><br><tag>飞刀</tag><br><tag>1.16.2~1.17.1</tag></td></tr>
+                    <tr><td class="projleft"><img class="projimg" src="source/img/project/0.png"></td></tr>
+                </table>
+            </div>            
         </div>
     </body>
 </html>

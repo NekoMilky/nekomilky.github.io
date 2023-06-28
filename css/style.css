@@ -7,8 +7,10 @@
     #mainbody{
         display: none;
     }
-    #alert{
-        display: block;
+}
+@media only screen and (min-width: 1480px){
+    #mainbody-m{
+        display: none;
     }
 }
 
