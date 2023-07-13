@@ -22,7 +22,7 @@ function toggledaynight(){
         document.getElementById("mainbox").style.boxShadow="0 5px 15px rgba(255,255,255,0.5)";
         document.getElementById("contact").style.filter="invert(0)";
     }else{
-		var n=10;
+		var n=11;
 		bg = new Array(n-1);
 		for(var i=1;i<=n;i++){
 			bg[i-1] = 'url(source/img/background/night/'+(i)+'.png)'
