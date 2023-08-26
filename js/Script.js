@@ -9,7 +9,7 @@ function toggledaynight(){
 		var n=1;
 		bg = new Array(n-1);
 		for(var i=1;i<=n;i++){
-			bg[i-1] = 'url(source/img/background/day/'+(i)+'.png)'
+			bg[i-1] = 'url(source/img/background/day/'+(i)+'.jpg)'
 		}
 		index = Math.floor(Math.random() * bg.length);
 		document.getElementById("mainpic").style.backgroundImage=(bg[index]);
@@ -24,7 +24,7 @@ function toggledaynight(){
 		var n=1;
 		bg = new Array(n-1);
 		for(var i=1;i<=n;i++){
-			bg[i-1] = 'url(source/img/background/night/'+(i)+'.png)'
+			bg[i-1] = 'url(source/img/background/night/'+(i)+'.jpg)'
 		}
 		index = Math.floor(Math.random() * bg.length);
 		document.getElementById("mainpic").style.backgroundImage=(bg[index]);
