@@ -3,58 +3,87 @@
     <head>
         <meta charset="utf-8">
         <title>NekoMilky's Home</title>
-        <link rel="stylesheet" type="text/css" href="css/style.css">
-        <link rel="stylesheet" type="text/css" href="css/toggle-button.css">
-        <script type="text/javascript" src="js/Script.js"></script>
-        <link rel="icon" href="source/img/icon.ico" type ="image/x-icon">
+        <link rel="icon" href="source/img/icon.ico" type="image/x-icon">
+        <link rel="stylesheet" href="css/body.css" type="text/css">
+        <link rel="stylesheet" href="css/div.css" type="text/css">
+        <link rel="stylesheet" href="css/img.css" type="text/css">
     </head>
     <body>
-        <div id="mainbody" style="position: absolute;left: 0;top: 0;width: 100%;height: auto;">
-            <!-- 背景图片 -->
-            <div id="mainpic" style="background-attachment: fixed;position: fixed;left: 0;top: 0;width: 100%;height: 100%;background-repeat: no-repeat;"></div>
-            <!-- 个人简介 -->
-            <div id="mainbox" class="mainbox" style="position: fixed;top: 15%;left: 10%;width: 25%;height: 70%;">
-                <input style="position: absolute;top: 3%;right: 3%;" required onclick="toggledaynight()" type="checkbox" id="toggledaynight" class="toggle-button" title="切换日夜">
-                <br>
-                <table style="width: 100%;height: 30%;">
-                    <tr><td><img src="source/img/photo.png" style="width: 30%;height: auto;"></td></tr>
-                    <tr><td><h1 style="font-size: 190%;font-weight: bold;">NekoMilky</h1></td></tr>
-                    <tr><td><h1 style="font-size: 120%;font-weight: bold;">呐，现在开始就要放晴了喔！</h1></td></tr>
-                    <tr><td><hr id="hr"></td></tr>
-                </table>
-                <br>
-                <table style="width: 100%;height: 30%;">
-                    <tr><td class="info"><info>年龄</info></td><td class="info"><info>3</info></td></tr>
-                    <tr><td class="info"><info>生日</info></td><td class="info"><info>01/19</info></td></tr>
-                    <tr><td class="info"><info>星座</info></td><td class="info"><img src="source/img/constellation.png" alt="摩羯" style="width: 9%;height: auto;"><info>摩羯</info></td></tr>
-                    <tr><td class="info"><info>性别</info></td><td class="info"><img src="source/img/gender.png" alt="女" style="width: 9%;height: auto;"><info>女</info></td></tr>
-                    <tr><td class="info"><info>家乡</info></td><td class="info"><info>地球</info></td></tr>
-                    <tr><td class="info"><info>职业</info></td><td class="info"><info>学生</info></td></tr>
-                </table>
-                <br>
-                <table style="width: 100%;height: auto;position: absolute;bottom: 0;">
-                    <tr><td id="contact"><a href="#"><img class="contact" src="source/img/contact/wechat.png" alt="微信" title="微信号: NekomusumeMilk" style="width: 9%;height: auto;"></a><a href="#"><img class="contact" src="source/img/contact/qq.png" alt="QQ" title="QQ号: 3412196936" style="width: 9%;height: auto;"></a><a href="#"><img class="contact" src="source/img/contact/mail.png" alt="邮箱" title="邮箱: 3412196936@qq.com" style="width: 9%;height: auto;"></a><a href="https://space.bilibili.com/417077119" target="_blank" rel="noopener noreferrer"><img class="contact" src="source/img/contact/bilibili.png" alt="哔哩哔哩" title="点击跳转" style="width: 9%;height: auto;"></a><a href="https://www.youtube.com/@NekomusumeMilk" target="_blank" rel="noopener noreferrer"><img class="contact" src="source/img/contact/youtube.png" alt="油管" title="点击跳转" style="width: 9%;height: auto;"></a><a href="https://twitter.com/NekomusumeMilk" target="_blank" rel="noopener noreferrer"><img class="contact" src="source/img/contact/twitter.png" alt="推特" title="点击跳转" style="width: 9%;height: auto;"></a></td></tr>
-                    <tr><td><copyright>Copyright © 2024 NekoMilky.</copyright></td></tr>
-		    <tr><td><copyright>All rights reserved.</copyright></td></tr>
-                    <tr><td><copyright>Powered by NekoMilky.</copyright></td></tr>
-                </table>
+        <div class="box box_info">
+            <div class="box_row box_row_boarder"></div>
+            <div class="box_row">
+                <img class="img img_avatar" src="source/img/header/avatar.png">
             </div>
-            <!-- 项目 -->
-            <div id="proj" style="position: absolute;top: 15%;left: 40%;width: 60%;height: auto;">
-		<h1><img class="projimg" src="source/img/project/0.png"></h1>
-                <h1 style="font-size: 200%;font-weight: bold;">PORTFOLIO!</h1>
-                <h1 style="font-size: 350%;font-weight: bold;position: relative;left: 10%;">Great minds have purpose.</h1>
-                <table class="projt">
-                    <tr><td class="projleft"><img class="projimg" src="source/img/project/0.png"></td></tr>
-                    <tr><td class="projleft"><a href="https://www.mcbbs.net/thread-1156258-1-1.html" target="_blank" rel="noopener noreferrer"><img class="projimg" src="source/img/project/1.gif"></a></td><td class="projright"><proj>密室杀手<br>Murder Mystery</proj><br><br><tag>Minecraft</tag><tag>数据包</tag><tag>小游戏</tag><tag>1.16~1.19.4</tag></td></tr>
-                    <tr><td class="projleft"><proj>太阳视运动模拟器<br>Solar Visual Motion Simulator</proj><br><br><tag>Scratch</tag><tag>模拟</tag><tag>地理</tag><tag>小程序</tag></td><td class="projright"><a href="https://aerfaying.com/Projects/211369" target="_blank" rel="noopener noreferrer"><img class="projimg" src="source/img/project/2.gif"></a></td></tr>
-                    <tr><td class="projleft"><a href="https://www.mcbbs.net/thread-1364116-1-1.html" target="_blank" rel="noopener noreferrer"><img class="projimg" src="source/img/project/3.gif"></a></td><td class="projright"><proj>更真实的昼夜交替<br>Realistic Daylight Cycle</proj><br><br><tag>Minecraft</tag><tag>数据包</tag><tag>模拟</tag><tag>地理</tag><tag>1.13.2+</tag></td></tr>
-                    <tr><td class="projleft"><proj>网页问卷前端&后端<br>Questionnaire<br>Front-End&Back-End</proj><br><br><tag>HTML</tag><tag>CSS</tag><tag>JavaScript</tag><tag>问卷</tag></td><td class="projright"><a href="questionnaire/index.html" target="_blank" rel="noopener noreferrer"><img class="projimg" src="source/img/project/4.gif"></a></td></tr>
-                    <tr><td class="projleft"><a href="https://www.mcbbs.net/thread-1265753-1-1.html" target="_blank" rel="noopener noreferrer"><img class="projimg" src="source/img/project/5.gif"></a></td><td class="projright"><proj>可投掷刀<br>Throwable Knives</proj><br><br><tag>Minecraft</tag><tag>数据包</tag><tag>飞刀</tag><tag>1.16.2~1.17.1</tag></td></tr>
-		    <tr><td class="projleft"><proj>微信聊天机器人<br>WeChat Bot</proj><br><br><tag>Python</tag><tag>微信</tag><tag>聊天</tag><tag>机器人</tag></td><td class="projright"><a href="source/file/wechatbot.zip" target="_blank" rel="noopener noreferrer"><img class="projimg" src="source/img/project/6.jpg"></a></td></tr>
-                    <tr><td class="projleft"><img class="projimg" src="source/img/project/0.png"></td></tr>
-                </table>
+            <div class="box_row box_row_id">
+                NekoMilky <img class="img img_gender" src="source/img/header/gender.png">
             </div>
+            <div class="box_row box_row_signature">
+                呐，现在开始就要放晴了喔！
+            </div>
+            <div class="box_row box_row_boarder"></div>
+            <div class="box_row box_row_tags">
+                <tag>萌</tag>
+                <tag>饭桶</tag>
+                <tag>温柔</tag>
+                <tag>摩羯座</tag>
+                <tag>幼稚鬼</tag>
+            </div>
+            <div class="box_row box_row_boarder"></div>
+            <div class="box_row">
+                <a href="source/file/wechat.png"><img class="img img_contact" src="source/img/contact/wechat.png"></a>
+                <a href="source/file/qq.png"><img class="img img_contact" src="source/img/contact/qq.png"></a>
+                <a href="https://space.bilibili.com/417077119"><img class="img img_contact" src="source/img/contact/bilibili.png"></a>
+                <a href="https://www.youtube.com/@NekomusumeMilk"><img class="img img_contact" src="source/img/contact/youtube.png"></a>
+                <a href="https://x.com/NekomusumeMilk"><img class="img img_contact" src="source/img/contact/x.png"></a>
+            </div>
+            <div class="box_row box_row_boarder"></div>
+            <div class="box_row box_row_copyright">
+                Copyright © 2024-2025 NekoMilky. All rights reserved.
+            </div>
+            <div class="box_row box_row_boarder"></div>
         </div>
+        <div class="box box_projects">
+            <div class="box_row box_row_boarder"></div>
+            <div class="box_row box_row_project_title">
+                PORTFOLIO!
+            </div>
+            <div class="box_row box_row_project_subtitle">
+                Great minds have purpose.
+            </div>
+            <div class="box_row box_row_boarder"></div>
+            <div class="box_row box_row_project">
+                <table class="project">
+                    <tr>
+                        <td class="project_column">
+                            <a href=""><img class="img img_project" src="source/img/project/2.gif"></a>
+                        </td>
+                        <td class="project_column">
+                            太阳视运动模拟器<br>
+                            Solar Visual Motion Simulator<br>
+                            <tag>Scratch</tag>
+                            <tag>地理</tag>
+                            <tag>模拟</tag>
+                            <tag>小程序</tag><br>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td class="project_column">
+                            <a href=""><img class="img img_project" src="source/img/project/4.gif"></a>
+                        </td>
+                        <td class="project_column">
+                            网页问卷前端&后端<br>
+                            Web Questionnaire Front-End & Back-End<br>
+                            <tag>HTML</tag>
+                            <tag>CSS</tag>
+                            <tag>JavaScript</tag>
+                            <tag>PHP</tag>
+                            <tag>问卷</tag><br>
+                        </td>
+                    </tr>
+                </table>
+            </div>
+            <div class="box_row box_row_boarder"></div>
+        </div>
+        <script src="js/random_tag_color.js"></script>
     </body>
 </html>

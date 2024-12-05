@@ -1,0 +1,58 @@
+.box {
+    background-color: rgba(255, 255, 255, 0.4); 
+    box-shadow: 0px 0px 10px 5px rgba(255, 255, 255, 0.4);
+    border-radius: 30px; 
+    height: auto;
+    align-items: center;
+    text-align: center;
+    position: relative;
+    margin: 0 auto;
+}
+.box_info {
+    width: 60%;
+    top: 20px;
+}
+.box_projects {
+    width: 60%;
+    top: 60px;
+}
+
+.box_row {
+    height: auto;
+    width: 100%;
+    align-items: center;
+    text-align: center;
+    position: relative;
+}
+.box_row_boarder {
+    height: 20px;
+}
+.box_row_copyright {
+    font-size: 24px;
+    font-weight: bold;
+}
+.box_row_id {
+    font-size: 40px;
+    font-weight: bold;
+}
+.box_row_project {
+    font-size: 24px;
+    font-weight: bold;
+    text-align: left;
+}
+.box_row_project_title {
+    font-size: 40px;
+    font-weight: bold;
+}
+.box_row_project_subtitle {
+    font-size: 24px;
+    font-weight: bold;
+}
+.box_row_tags {
+    font-size: 24px;
+    font-weight: bold;
+}
+.box_row_signature {
+    font-size: 24px;
+    font-weight: bold;    
+}

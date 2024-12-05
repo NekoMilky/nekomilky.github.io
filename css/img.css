@@ -1,0 +1,17 @@
+.img {
+    width: auto;
+}
+.img_avatar {
+    height: 128px;
+}
+.img_contact {
+    height: 36px;
+}
+.img_gender {
+    height: 26px;
+}
+.img_project {
+    width: 95%;
+    height: auto;
+    border-radius: 10px;
+}

@@ -1,0 +1,27 @@
+@font-face {
+    font-family: "ruan";
+    src: url("../source/font/font.ttf");
+}
+body {
+    margin: 0;
+    padding: 0;
+    background-image: url(../source/img/background.jpg);
+    height: 100vh;
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    font-family: "ruan", sans-serif;
+}
+tag {
+    padding: 3px;
+    border-radius: 10px;
+}
+.project {
+    width: 90%;
+    height: auto;
+    margin: 0 auto;
+}
+.project_column {
+    width: 50%;
+    height: auto;
+}

@@ -1,0 +1,164 @@
+<!doctype html>
+<html>
+    <head>
+    <meta charset="utf-8">
+    <title>一个问卷调查QWQ</title>
+    <link rel="icon" href="/icon.ico" type="image/x-icon" />	
+    <style>
+    	div{background:rgba(255,255,255,0.7);color:#000;padding:15px;margin:60px auto 0px;width:600px;font-family:"等线";box-shadow:5px 5px 15px black;}
+    	h2{text-align:center;}
+    	hr{width:80%;border:1px solid #000;margin-top:-5px;}
+    	input{margin:10px;}
+    	li{margin:10px;}
+    	input[type="text"],input[type="tel"]{width:100px;border:0px;border-bottom:1px solid;}
+    	button{background-color:#008CBA;border:none;color:white;padding:15px 32px;text-align:center;text-decoration:none;border-radius: 12px;display:inline-block;font-size:16px;font-family:"等线";margin:0% 40%;} 
+    	button:hover{background:#008C00;}
+    	.bold{font-weight:bold;}
+		hide{display:none;}
+		body{width:100%;height:100%;background-repeat: no-repeat;background-size: 100% 100%;-webkit-background-size: 100% 100%;background-attachment: fixed;-webkit-background-attachment: fixed;}
+       textarea{width:100%;height:100px;padding:12px 20px;box-sizing:border-box;border:2px solid #ccc;border-radius:4px;background-color:#f8f8f8;resize:none;}
+	</style>   
+    <script language=JavaScript>
+	var n=5;
+    bg = new Array(n-1);
+    for(var i=1;i<=n;i++){
+        bg[i-1] = 'images/'+(i)+'.png'
+    }
+    index = Math.floor(Math.random() * bg.length);
+    document.write("<body background="+bg[index]+">");
+    </script>
+   </head>
+    
+    <body>
+    	<div>
+        	<h2>关于研究我校（龙岩一中）高一学生对太阳光照<br/>对人体皮肤的影响了解情况调查问卷</h2>
+    		<li style="font-size:16px">当今时代，皮肤保养已成为大多数女生（其实男生也要啊喂！）的必修课。</li>		
+    		<li style="font-size:16px">辣么，我们该如何做好皮肤防护工作呢?</li><br/>				
+    		<li style="font-size:16px">本次问卷采用匿名形式，感谢您能抽出宝贵的几分钟时间来参加本次问卷。</li>	
+    		<li style="font-size:16px">请如实填写哟♪(･ω･)ﾉ！</li><br/>	
+    		<hr/>
+    		    <form action="submit.php" method="post" onSubmit="return check()">
+            	    <ol style="list-style: none;">
+    				    <li class="bold">Q1. 您喜欢晒太阳吗？</li>
+    				       <label><input type="radio" name="q1"  required value="A">A. 肥肠喜欢 </label><br/>
+    				       <label><input type="radio" name="q1"  required value="B">B. 喜欢 </label><br/>
+    				       <label><input type="radio" name="q1"  required value="C">C. 一般般吧 </label><br/>
+    				       <label><input type="radio" name="q1"  required value="D">D. 不喜欢 </label><br/>	   
+    				       <label><input type="radio" name="q1"  required value="E">E. 肥肠不喜欢 </label><br/>
+    					<br/>
+    				   
+                     <li class="bold">Q2. 您平常平均每天接受阳光的时长是？</li>
+                         <label><input type="radio" name="q2"  required value="A">A. 0~0.5小时 </label><br/>
+                         <label><input type="radio" name="q2"  required value="B">B. 0.5~1小时 </label><br/>
+                         <label><input type="radio" name="q2"  required value="C">C. 1~2小时 </label><br/>
+                         <label><input type="radio" name="q2"  required value="D">D. 2~4小时 </label><br/>
+                         <label><input type="radio" name="q2"  required value="E">E. 4~8小时 </label><br/>	
+                         <label><input type="radio" name="q2"  required value="F">F. 8~24小时 </label><br/>		
+                     <br/>
+					   
+                     <li class="bold">Q3. 您平常出门会抹防晒霜/撑遮阳伞/戴袖套吗？</li>
+                         <label><input type="radio" name="q3"  required value="A">A. 经常 </label><br/>
+                         <label><input type="radio" name="q3"  required value="B">B. 偶尔 </label><br/>
+                         <label><input type="radio" name="q3"  required value="C">C. 极少 </label><br/>
+                         <label><input type="radio" name="q3"  required value="D">D. 从来都不 </label><br/>
+    			       <br/>
+					   
+                     <li class="bold">Q4. 您的肤色较过去有何变化？</li>
+                         <label><input type="radio" name="q4"  required value="A" >A. 变化较大 </label><br/>
+                         <label><input type="radio" name="q4"  required value="B" >B. 变化一般 </label><br/>
+                         <label><input type="radio" name="q4"  required value="C">C. 变化较小 </label><br/>
+                         <label><input type="radio" name="q4"  required value="D">D. 几乎没有 </label><br/>
+						 
+    			       <br/>
+			   
+                     <li class="bold">Q5. 您还记得您刚来到人间时的肤色是？</li>
+                         <label><input type="radio" name="q5" required value="A">A. </label><font style="background:black" color="#fdeec7" class="bold">#fdeec7</font><br/>
+                         <label><input type="radio" name="q5" required value="B">B. </label><font style="background:black" color="#fee1b9" class="bold">#fee1b9</font><br/>
+                         <label><input type="radio" name="q5" required value="C">C. </label><font style="background:black" color="#fbde9b" class="bold">#fbde9b</font><br/>
+                         <label><input type="radio" name="q5" required value="D">D. </label><font style="background:black" color="#fdc786" class="bold">#fdc786</font><br/>
+                         <label><input type="radio" name="q5" required value="E">E. </label><font style="background:black" color="#fcbd84" class="bold">#fcbd84</font><br/>
+                         <label><input type="radio" name="q5" required value="F">F. </label><font style="background:black" color="#fbc5a4" class="bold">#fbc5a4</font><br/>
+                         <label><input type="radio" name="q5" required value="G">G. </label><font style="background:black" color="#b89c84" class="bold">#b89c84</font><br/>	
+                         <label><input type="radio" name="q5" required value="H">H. </label><font style="background:black" color="#a87256" class="bold">#a87256</font><br/>
+                         <label><input type="radio" name="q5" required value="I">I. </label><font style="background:black" color="#9f7c56" class="bold">#9f7c56</font><br/>
+                         <label><input type="radio" name="q5" required value="K">K. 我忘了</label><br/>						 
+    			       <br/>
+					   
+                     <li class="bold">Q6. 您现在的肤色是？</li>
+                         <label><input type="radio" name="q6" required value="A">A. </label><font style="background:black" color="#fdeec7" class="bold">#fdeec7</font><br/>
+                         <label><input type="radio" name="q6" required value="B">B. </label><font style="background:black" color="#fee1b9" class="bold">#fee1b9</font><br/>
+                         <label><input type="radio" name="q6" required value="C">C. </label><font style="background:black" color="#fbde9b" class="bold">#fbde9b</font><br/>
+                         <label><input type="radio" name="q6" required value="D">D. </label><font style="background:black" color="#fdc786" class="bold">#fdc786</font><br/>
+                         <label><input type="radio" name="q6" required value="E">E. </label><font style="background:black" color="#fcbd84" class="bold">#fcbd84</font><br/>
+                         <label><input type="radio" name="q6" required value="F">F. </label><font style="background:black" color="#fbc5a4" class="bold">#fbc5a4</font><br/>
+                         <label><input type="radio" name="q6" required value="G">G. </label><font style="background:black" color="#b89c84" class="bold">#b89c84</font><br/>	
+                         <label><input type="radio" name="q6" required value="H">H. </label><font style="background:black" color="#a87256" class="bold">#a87256</font><br/>
+                         <label><input type="radio" name="q6" required value="I">I. </label><font style="background:black" color="#9f7c56" class="bold">#9f7c56</font><br/>
+    			       <br/>
+
+                     <li class="bold">Q7. 您认为肤色变黑与紫外线照射有关吗？</li>
+                         <label><input type="radio" name="q7"  required value="A">A. 关系很大 </label><br/>
+                         <label><input type="radio" name="q7"  required value="B">B. 关系一般 </label><br/>						 
+                         <label><input type="radio" name="q7"  required value="C">C. 关系不大 </label><br/>
+    				    <br/>
+						
+                     <li class="bold">Q8. 您认为紫外线照射时间长/强度高会对皮肤产生不利影响吗？</li>
+                         <label><input type="radio" name="q8"  required onclick="show(10)" value="A">A. 影响较大 </label><br/>
+                         <label><input type="radio" name="q8"  required onclick="show(10)" value="B">B. 影响一般 </label><br/>							 
+                         <label><input type="radio" name="q8"  required onclick="show(10)" value="C">C. 影响较小 </label><br/>						 
+                         <label><input type="radio" name="q8"  required onclick="hide(10)" value="D">D. 不会吧不会吧 </label><br/>
+    				    <br/>
+
+                     <li class="bold">Q9. 除Q3所提到的防晒措施外，您还能给出哪些防晒建议？（100字内）</li>
+					        <li><textarea name="q9" maxlength=100 placeholder="在这里输入您的建议"></textarea></li>
+    				    <br/>
+						
+						<hide id="q10" value="false">
+                     <li class="bold">Q10. 您认为紫外线照射时间过长/强度过高会对皮肤产生哪些不利影响？（100字内）</li>
+					        <li><textarea name="q10" maxlength=100 placeholder="在这里输入您的观点"></textarea></li>
+    				    <br/>  
+                     </hide>						
+
+                     <li class="bold">Q11. 非常感谢您的参与，您对您的外貌有什么新的认识吗？（可多选）</li>
+                         <label><input type="checkbox"  name="q11" value="A">A. 满意 </label><br/>
+                         <label><input type="checkbox"  name="q11" value="B">B. 肥肠满意 </label><br/>
+                         <label><input type="checkbox"  name="q11" value="C">C. 这还用说 </label><br/>
+    
+                  </ol>
+              <button type="submit">提交</button>	
+    			<br/>
+    			<br/>
+              <h2 style="font-size:16px">Copyright © 2020-2021 Sweety_Milk. All rights reserved.</h2>	
+              <h2 style="font-size:16px">Powered by Sweety_Milk.</h2>				
+              <h2 style="font-size:16px">意见反馈请联系 QQ 3412196936</h2>						
+           </form>
+    		
+           <script>
+		        function show(num){
+				    document.getElementById("q"+num).style.display = "block";
+				}
+				
+		        function hide(num){
+				    document.getElementById("q"+num).style.display = "none";				
+				}
+				
+    		    function checkbox(num){
+    				var checkbox=document.getElementsByName("q"+num);
+    				for(var i=0; i<checkbox.length;i++) if(checkbox[i].checked) return true;
+					return false;
+    			}	
+    			
+    			function check(){
+				    var error=0;
+    				if(checkbox(11)==false){
+    					alert("第11题至少要选择一个选项！");
+						error=1;
+    				}
+					if(error==0) return true;
+					return false;
+    			}
+    		</script>
+    		  
+        </div>
+    </body>
+</html>
