@@ -6,6 +6,9 @@
 }
 .img_contact {
     height: 36px;
+    display: inline-block;
+    margin: 0 5px;
+    transition: transform 0.3s ease;
 }
 .img_gender {
     height: 26px;
@@ -13,5 +16,6 @@
 .img_project {
     width: 95%;
     height: auto;
-    border-radius: 10px;
+    border-radius: 15px;
+    transition: transform 0.3s ease;
 }

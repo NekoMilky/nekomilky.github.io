@@ -9,32 +9,23 @@
         <link rel="stylesheet" href="css/img.css" type="text/css">
     </head>
     <body>
+        <div class="boarder"></div>
         <div class="box box_info">
             <div class="box_row box_row_boarder"></div>
             <div class="box_row">
                 <img class="img img_avatar" src="source/img/header/avatar.png">
             </div>
             <div class="box_row box_row_id">
-                NekoMilky <img class="img img_gender" src="source/img/header/gender.png">
+                NekoMilky
+                <img class="img img_gender" src="source/img/header/gender.png">
             </div>
             <div class="box_row box_row_signature">
                 呐，现在开始就要放晴了喔！
             </div>
-            <div class="box_row box_row_boarder"></div>
             <div class="box_row box_row_tags">
-                <tag>萌</tag>
-                <tag>饭桶</tag>
-                <tag>温柔</tag>
-                <tag>摩羯座</tag>
-                <tag>幼稚鬼</tag>
             </div>
             <div class="box_row box_row_boarder"></div>
-            <div class="box_row">
-                <a href="source/file/wechat.png"><img class="img img_contact" src="source/img/contact/wechat.png"></a>
-                <a href="source/file/qq.png"><img class="img img_contact" src="source/img/contact/qq.png"></a>
-                <a href="https://space.bilibili.com/417077119"><img class="img img_contact" src="source/img/contact/bilibili.png"></a>
-                <a href="https://www.youtube.com/@NekomusumeMilk"><img class="img img_contact" src="source/img/contact/youtube.png"></a>
-                <a href="https://x.com/NekomusumeMilk"><img class="img img_contact" src="source/img/contact/x.png"></a>
+            <div class="box_row box_row_contacts">
             </div>
             <div class="box_row box_row_boarder"></div>
             <div class="box_row box_row_copyright">
@@ -42,6 +33,7 @@
             </div>
             <div class="box_row box_row_boarder"></div>
         </div>
+        <div class="boarder_large"></div>
         <div class="box box_projects">
             <div class="box_row box_row_boarder"></div>
             <div class="box_row box_row_project_title">
@@ -51,39 +43,27 @@
                 Great minds have purpose.
             </div>
             <div class="box_row box_row_boarder"></div>
+            <div class="box_row box_row_search_project">
+                <input class="input_search_project" type="text" placeholder="请输入关键字，多个关键字间用空格隔开">
+                <button class="button_search_project">查找</button>
+            </div>
+            <div class="box_row box_row_search_project_result">
+            </div>
+            <div class="box_row box_row_boarder"></div>
             <div class="box_row box_row_project">
-                <table class="project">
-                    <tr>
-                        <td class="project_column">
-                            <a href=""><img class="img img_project" src="source/img/project/2.gif"></a>
-                        </td>
-                        <td class="project_column">
-                            太阳视运动模拟器<br>
-                            Solar Visual Motion Simulator<br>
-                            <tag>Scratch</tag>
-                            <tag>地理</tag>
-                            <tag>模拟</tag>
-                            <tag>小程序</tag><br>
-                        </td>
-                    </tr>
-                    <tr>
-                        <td class="project_column">
-                            <a href=""><img class="img img_project" src="source/img/project/4.gif"></a>
-                        </td>
-                        <td class="project_column">
-                            网页问卷前端&后端<br>
-                            Web Questionnaire Front-End & Back-End<br>
-                            <tag>HTML</tag>
-                            <tag>CSS</tag>
-                            <tag>JavaScript</tag>
-                            <tag>PHP</tag>
-                            <tag>问卷</tag><br>
-                        </td>
-                    </tr>
+                <table class="table_project">
                 </table>
             </div>
             <div class="box_row box_row_boarder"></div>
         </div>
-        <script src="js/random_tag_color.js"></script>
+        <div class="boarder"></div>
+        <script src="js/info.js"></script>
+        <script src="js/projects.js"></script>
+        <script src="js/overall.js"></script>
+        <script>
+            initInfo();
+            initProjects();
+            init();
+        </script>
     </body>
 </html>

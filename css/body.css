@@ -2,6 +2,7 @@
     font-family: "ruan";
     src: url("../source/font/font.ttf");
 }
+
 body {
     margin: 0;
     padding: 0;
@@ -15,13 +16,41 @@ body {
 tag {
     padding: 3px;
     border-radius: 10px;
+    display: inline-block;
+    margin: 5px 3px;
 }
-.project {
+
+.button_search_project {
+    padding: 8px;
+    border: none;
+    border-radius: 15px;
+    background-color: rgba(255, 192, 192, 0.8);
+    width: 10%;
+    height: auto;
+    font-family: "ruan", sans-serif;
+    font-weight: bold;
+    font-size: 24px;
+    margin: 10px 0;
+    transition: background-color 0.3s ease;
+}
+.input_search_project {
+    padding: 8px;
+    border: none;
+    border-radius: 15px;
+    background-color: rgba(255, 255, 255, 0.4);
+    width: 70%;
+    height: 30px;
+    font-family: "ruan", sans-serif;
+    font-weight: bold;
+    font-size: 24px;
+    margin: 10px 0;
+}
+.table_project {
     width: 90%;
     height: auto;
     margin: 0 auto;
 }
-.project_column {
+.table_project_column {
     width: 50%;
     height: auto;
 }
