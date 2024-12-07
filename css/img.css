@@ -1,5 +1,6 @@
 .img {
     width: auto;
+    transition: transform 0.3s ease;
 }
 .img_avatar {
     height: 128px;
@@ -8,7 +9,6 @@
     height: 36px;
     display: inline-block;
     margin: 0 5px;
-    transition: transform 0.3s ease;
 }
 .img_gender {
     height: 26px;
@@ -17,5 +17,4 @@
     width: 95%;
     height: auto;
     border-radius: 15px;
-    transition: transform 0.3s ease;
 }

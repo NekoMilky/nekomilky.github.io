@@ -121,15 +121,15 @@ function projectSearch() {
     }
 }
 function initProjects() {
-    // 按钮动作
-    const projectSearchButton = document.querySelector('.button_search_project');
-    projectSearchButton.addEventListener('mouseenter', function () {
-        projectSearchButton.style.backgroundColor = 'rgba(255, 168, 168, 0.8)';
+    // 搜索框
+    const projectSearchInput = document.querySelector('.input_search_project');
+    projectSearchInput.addEventListener('focus', function () {
+        projectSearchInput.style.border = '2px solid rgba(0, 0, 0, 0.4)';
     });
-    projectSearchButton.addEventListener('mouseleave', function () {
-        projectSearchButton.style.backgroundColor = 'rgba(255, 192, 192, 0.8)';
+    projectSearchInput.addEventListener('blur', function () {
+        projectSearchInput.style.border = '2px solid rgba(255, 255, 255, 0.4)';
     });
-    projectSearchButton.addEventListener('click', projectSearch);
+    projectSearchInput.addEventListener('input', projectSearch);
     // 初始化项目
     projectCreate();
 }
