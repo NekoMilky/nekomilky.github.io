@@ -2,7 +2,8 @@ function randomColor() {
     let r = Math.floor(Math.random() * 128) + 128;
     let g = Math.floor(Math.random() * 128) + 128;
     let b = Math.floor(Math.random() * 128) + 128;
-    return `rgba(${r}, ${g}, ${b}, 0.6)`;
+    let a = Math.random() * 0.2 + 0.5;
+    return `rgba(${r}, ${g}, ${b}, ${a}`;
 }
 function randomSnowflakeColor() {
     let rg = Math.floor(Math.random() * 32) + 224;
