@@ -28,13 +28,6 @@ const projects = [
         tags: ["Minecraft", "数据包", "模拟", "地理", "1.13", "1.14", "1.15", "1.16", "1.17", "1.18", "1.19", "1.20", "1.21"]
     },
     {
-        title: "网页问卷前端&后端",
-        subtitle: "Web Questionnaire Front-End & Back-End",
-        img: "source/img/project/4.gif",
-        link: "questionnaire/index.html",
-        tags: ["HTML", "CSS", "JavaScript", "PHP", "问卷"]
-    },
-    {
         title: "微信聊天机器人",
         subtitle: "WeChat Bot",
         img: "source/img/project/6.jpg",
