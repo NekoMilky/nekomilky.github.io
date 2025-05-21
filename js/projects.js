@@ -1,5 +1,12 @@
 const projects = [
     {
+        title: "智能化网上订餐Web平台",
+        subtitle: "Intelligent Online Ordering Web Platform",
+        img: "source/img/project/8.jpg",
+        link: "https://dgcrohmmlkgk.cloud.sealos.io",
+        tags: ["Vue3", "PHP", "Web应用"]
+    },
+    {
         title: "扫雷",
         subtitle: "MineSweeper",
         img: "source/img/project/7.jpg",
