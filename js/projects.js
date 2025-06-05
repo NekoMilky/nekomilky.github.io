@@ -3,7 +3,7 @@ const projects = [
         title: "网上订餐Web平台",
         subtitle: "Online Ordering Web Platform",
         img: "source/img/project/8.jpg",
-        link: "https://dgcrohmmlkgk.cloud.sealos.io",
+        link: "online_ordering_system/index.html",
         tags: ["HTML", "CSS", "JavaScript", "PHP", "Web应用"]
     },
     {
