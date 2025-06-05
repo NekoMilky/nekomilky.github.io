@@ -4,7 +4,7 @@ const projects = [
         subtitle: "Online Ordering Web Platform",
         img: "source/img/project/8.jpg",
         link: "https://dgcrohmmlkgk.cloud.sealos.io",
-        tags: ["Vue3", "PHP", "Web应用"]
+        tags: ["HTML", "CSS", "JavaScript", "PHP", "Web应用"]
     },
     {
         title: "扫雷",
