@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>系统设置 - 美食外卖平台</title>
+    <link rel="stylesheet" href="D:\Users\PartZERO\Desktop\数据库大作业\css\admin.css">
+</head>
+<body>
+    <div class="app-container">
+        <nav class="navbar">
+            <div class="logo">美食外卖</div>
+            <div class="nav-items">
+                <div id="user-auth">
+                    <!-- 动态加载用户登录/注册或用户中心 -->
+                </div>
+            </div>
+        </nav>
+
+        <div class="main-content">
+            <h1>系统设置</h1>
+            <form id="system-settings-form">
+                <div class="form-group">
+                    <label for="platform-name">平台名称</label>
+                    <input type="text" id="platform-name" required>
+                </div>
+                <div class="form-group">
+                    <label for="contact-info">联系方式</label>
+                    <input type="text" id="contact-info" required>
+                </div>
+                <button type="submit" class="btn-primary">保存设置</button>
+            </form>
+        </div>
+    </div>
+
+    <script src="D:\Users\PartZERO\Desktop\数据库大作业\js\admin.js"></script>
+</body>
+</html>

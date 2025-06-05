@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>菜品浏览 - 美食外卖平台</title>
+    <link rel="stylesheet" href="css/customer.css">
+</head>
+<body>
+    <div class="app-container">
+        <nav class="navbar">
+            <div class="logo">美食外卖</div>
+            <div class="nav-items">
+                <a href="customer/profile.html" class="nav-item">个人中心</a>
+                <a href="customer/cart.html" class="nav-item">购物车</a>
+                <a href="customer/orders.html" class="nav-item">我的订单</a>
+            </div>
+        </nav>
+
+        <div class="main-content">
+            <h1>菜品浏览</h1>
+            <div class="dishes-list">
+                <!-- 动态加载菜品列表 -->
+                <a href="javascript:void(0);" class="dish-card">
+                    <img src="images/dish1.jpg" alt="菜品图片">
+                    <div class="dish-info">
+                        <h3>宫保鸡丁</h3>
+                        <p class="price">¥28.00</p>
+                        <p class="description">经典川菜，麻辣鲜香</p>
+                        <button class="add-to-cart">加入购物车</button>
+                    </div>
+                </a>
+            </div>
+        </div>
+    </div>
+
+    <script src="js/customer.js"></script>
+</body>
+</html>

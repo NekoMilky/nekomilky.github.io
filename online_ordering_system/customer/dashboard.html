@@ -1,0 +1,108 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>顾客中心 - 美食外卖平台</title>
+    <link rel="stylesheet" href="css/customer.css">
+</head>
+<body>
+    <div class="app-container">
+        <nav class="navbar">
+            <div class="logo">美食外卖</div>
+            <div class="nav-items">
+                <a href="profile.html" class="nav-item">个人中心</a>
+                <a href="cart.html" class="nav-item">购物车</a>
+                <a href="orders.html" class="nav-item">我的订单</a>
+            </div>
+        </nav>
+
+        <div class="main-content">
+            <h1>欢迎回来！</h1>
+            
+            <!-- 快速访问区域 -->
+            <div class="quick-actions">
+                <a href="restaurants.html" class="action-card">
+                    <div class="action-icon">
+                        <i class="icon-restaurant"></i>
+                    </div>
+                    <h3>浏览餐厅</h3>
+                    <p>发现附近美食</p>
+                </a>
+                <a href="cart.html" class="action-card">
+                    <div class="action-icon">
+                        <i class="icon-cart"></i>
+                    </div>
+                    <h3>我的购物车</h3>
+                    <p>查看待下单商品</p>
+                </a>
+                <a href="active.html" class="action-card">
+                    <div class="action-icon">
+                        <i class="icon-active-order"></i>
+                    </div>
+                    <h3>进行中订单</h3>
+                    <p>跟踪配送进度</p>
+                </a>
+            </div>
+            
+            <!-- 推荐餐厅 -->
+            <div class="section">
+                <h2>推荐餐厅</h2>
+                <div class="recommended-restaurants">
+                    <!-- 动态加载推荐餐厅 -->
+                    <div class="restaurant-card">
+                        <img src="images/restaurant1.jpg" alt="川湘阁">
+                        <div class="restaurant-info">
+                            <h3>川湘阁</h3>
+                            <div class="rating">
+                                <span class="stars">★★★★☆</span>
+                                <span class="score">4.2</span>
+                            </div>
+                            <p class="cuisine">川菜 | 湘菜 | 麻辣</p>
+                            <p class="delivery">¥5配送费 | 30分钟</p>
+                        </div>
+                    </div>
+                    <div class="restaurant-card">
+                        <img src="images/restaurant2.jpg" alt="粤式茶餐厅">
+                        <div class="restaurant-info">
+                            <h3>粤式茶餐厅</h3>
+                            <div class="rating">
+                                <span class="stars">★★★★★</span>
+                                <span class="score">4.8</span>
+                            </div>
+                            <p class="cuisine">粤菜 | 点心 | 烧腊</p>
+                            <p class="delivery">¥3配送费 | 25分钟</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            
+            <!-- 最近订单 -->
+            <div class="section">
+                <h2>最近订单</h2>
+                <div class="recent-orders">
+                    <!-- 动态加载最近订单 -->
+                    <div class="order-card">
+                        <div class="order-header">
+                            <span class="order-id">订单 #12345</span>
+                            <span class="order-date">2023-05-15</span>
+                            <span class="order-status completed">已完成</span>
+                        </div>
+                        <div class="order-details">
+                            <p class="restaurant">川湘阁</p>
+                            <p class="items">宫保鸡丁 ×1, 水煮鱼 ×1</p>
+                            <p class="total">总计: ¥68.00</p>
+                        </div>
+                        <div class="order-actions">
+                            <button class="btn-reorder">再来一单</button>
+                        </div>
+                    </div>
+                </div>
+                <a href="history.html" class="view-all">查看全部历史订单 →</a>
+            </div>
+        </div>
+    </div>
+
+    <script src="js/customer.js"></script>
+</body>
+</html>

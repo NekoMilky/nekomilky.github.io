@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>订单监控 - 美食外卖平台</title>
+    <link rel="stylesheet" href="css/admin.css">
+</head>
+<body>
+    <div class="app-container">
+        <nav class="navbar">
+            <div class="logo">美食外卖</div>
+            <div class="nav-items">
+                <div id="user-auth">
+                    <!-- 动态加载用户登录/注册或用户中心 -->
+                </div>
+            </div>
+        </nav>
+
+        <div class="main-content">
+            <h1>订单监控</h1>
+            <div class="order-tabs">
+                <div class="tab active" data-status="all">全部</div>
+                <div class="tab" data-status="pending">待处理</div>
+                <div class="tab" data-status="processing">进行中</div>
+                <div class="tab" data-status="completed">已完成</div>
+            </div>
+            <div class="order-items">
+                <!-- 动态加载订单列表 -->
+            </div>
+        </div>
+    </div>
+
+    <script src="js/admin.js"></script>
+</body>
+</html>

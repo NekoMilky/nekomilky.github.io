@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>购物车 - 美食外卖平台</title>
+    <link rel="stylesheet" href="css/customer.css">
+</head>
+<body>
+    <div class="app-container">
+        <nav class="navbar">
+            <div class="logo">美食外卖</div>
+            <div class="nav-items">
+                <a href="customer/profile.html" class="nav-item">个人中心</a>
+                <a href="javascript:void(0);" class="nav-item">购物车</a>
+                <a href="customer/orders.html" class="nav-item">我的订单</a>
+            </div>
+        </nav>
+
+        <div class="main-content">
+            <h1>购物车</h1>
+            <div class="cart-items">
+                <!-- 动态加载购物车商品列表 -->
+            </div>
+            <div class="cart-summary">
+                <div class="summary-row">
+                    <span>商品总价</span>
+                    <span id="total-price">¥0.00</span>
+                </div>
+                <button class="btn-primary checkout-btn">去结算</button>
+            </div>
+        </div>
+    </div>
+
+    <script src="js/customer.js"></script>
+</body>
+</html>

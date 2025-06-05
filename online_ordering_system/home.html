@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>首页推荐 - 美食外卖平台</title>
+    <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+    <div class="app-container">
+        <nav class="navbar">
+            <div class="logo">美食外卖</div>
+            <div class="nav-items">
+                <div class="nav-item dropdown">
+                    <a href="javascript:void(0);">我的订单</a>
+                    <div class="dropdown-content">
+                        <a href="customer/order/active.html">进行中订单</a>
+                        <a href="customer/order/history.html">历史订单</a>
+                    </div>
+                </div>
+                <a href="customer/cart.html" class="nav-item">购物车</a>
+                <a href="customer/profile.html" class="nav-item">个人中心</a>
+            </div>
+        </nav>
+
+        <div class="main-content">
+            <div class="sidebar">
+                <div class="sidebar-section">
+                    <h3>菜品分类</h3>
+                    <ul id="category-list">
+                        <!-- 动态加载分类 -->
+                    </ul>
+                </div>
+            </div>
+            
+            <div class="content-area">
+                <div id="dish-display">
+                    <div class="dish-grid">
+                        <!-- 动态加载菜品卡片 -->
+                        <a href="customer/dishes.html">
+                            <div class="dish-card">
+                                <img src="images/dish1.jpg" alt="菜品图片">
+                                <div class="dish-info">
+                                    <h3>宫保鸡丁</h3>
+                                    <p class="price">¥28.00</p>
+                                    <p class="description">经典川菜，麻辣鲜香</p>
+                                    <button class="add-to-cart">加入购物车</button>
+                                </div>
+                            </div>
+                        </a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <script src="js/main.js"></script>
+</body>
+</html>

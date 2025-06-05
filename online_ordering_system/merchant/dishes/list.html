@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>菜品管理 - 美食外卖平台</title>
+    <link rel="stylesheet" href="css/merchant.css">
+</head>
+<body>
+    <div class="app-container">
+        <nav class="navbar">
+            <div class="logo">美食外卖</div>
+            <div class="nav-items">
+                <div id="user-auth">
+                    <!-- 动态加载用户登录/注册或用户中心 -->
+                </div>
+            </div>
+        </nav>
+
+        <div class="main-content">
+            <h1>菜品管理</h1>
+            <button id="add-dish-btn" class="btn-primary">添加新菜品</button>
+            <div class="dishes-list">
+                <table>
+                    <thead>
+                        <tr>
+                            <th>ID</th>
+                            <th>图片</th>
+                            <th>名称</th>
+                            <th>价格</th>
+                            <th>描述</th>
+                            <th>操作</th>
+                        </tr>
+                    </thead>
+                    <tbody id="dishes-table-body">
+                        <!-- 动态加载菜品列表 -->
+                    </tbody>
+                </table>
+            </div>
+        </div>
+    </div>
+
+    <script src="js/merchant.js"></script>
+</body>
+</html>
