@@ -1,5 +1,12 @@
 const projects = [
     {
+        title: "太阳视运动模拟器",
+        subtitle: "Solar Visual Motion Simulator",
+        img: "source/img/project/2.jpg",
+        link: "https://nekomilky.github.io/solar-visual-motion-simulator/",
+        tags: ["Vue.js", "Three.js", "Web应用", "地理", "模拟"]
+    },
+    {
         title: "网上订餐Web平台",
         subtitle: "Online Ordering Web Platform",
         img: "source/img/project/8.jpg",
@@ -19,13 +26,6 @@ const projects = [
         img: "source/img/project/1.gif",
         link: "https://www.bilibili.com/opus/608222434889664218",
         tags: ["Minecraft", "数据包", "小游戏", "1.16", "1.17", "1.18", "1.19"]
-    },
-    {
-        title: "太阳视运动模拟器",
-        subtitle: "Solar Visual Motion Simulator",
-        img: "source/img/project/2.gif",
-        link: "https://aerfaying.com/Projects/211369",
-        tags: ["Scratch", "地理", "模拟", "小程序"]
     },
     {
         title: "更真实的昼夜交替",
