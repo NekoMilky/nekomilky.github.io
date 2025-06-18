@@ -10,7 +10,7 @@ const projects = [
         title: "网上订餐Web平台",
         subtitle: "Online Ordering Web Platform",
         img: "source/img/project/8.jpg",
-        link: "https://nekomilky.github.io/online_ordering_system_frontend/index.html",
+        link: "https://nekomilky.github.io/online-ordering-system-frontend/index.html",
         tags: ["HTML", "CSS", "JavaScript", "PHP", "Web应用"]
     },
     {
