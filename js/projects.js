@@ -3,14 +3,14 @@ const projects = [
         title: "太阳视运动模拟器",
         subtitle: "Solar Visual Motion Simulator",
         img: "source/img/project/2.gif",
-        link: "https://nekomilky.github.io/solar-visual-motion-simulator/",
+        link: "https://nekomilky.github.io/solar-visual-motion-simulator/index.html",
         tags: ["Vue.js", "Three.js", "Web应用", "地理", "模拟"]
     },
     {
         title: "网上订餐Web平台",
         subtitle: "Online Ordering Web Platform",
         img: "source/img/project/8.jpg",
-        link: "online_ordering_system/index.html",
+        link: "https://nekomilky.github.io/online_ordering_system_frontend/index.html",
         tags: ["HTML", "CSS", "JavaScript", "PHP", "Web应用"]
     },
     {
