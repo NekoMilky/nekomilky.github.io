@@ -7,13 +7,6 @@ const projects = [
         tags: ["Vue.js", "Three.js", "Web应用", "地理", "模拟"]
     },
     {
-        title: "网上订餐Web平台",
-        subtitle: "Online Ordering Web Platform",
-        img: "source/img/project/8.jpg",
-        link: "https://nekomilky.github.io/online-ordering-system-frontend/index.html",
-        tags: ["HTML", "CSS", "JavaScript", "PHP", "Web应用"]
-    },
-    {
         title: "扫雷",
         subtitle: "MineSweeper",
         img: "source/img/project/7.jpg",
