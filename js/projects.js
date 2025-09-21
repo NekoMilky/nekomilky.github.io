@@ -1,5 +1,12 @@
 const projects = [
     {
+        title: "MilkyShare音乐分享平台",
+        subtitle: "MilkyShare Music Sharing Platform",
+        img: "source/img/project/8.jpg",
+        link: "https://ezvkehbuppyz.sealosgzg.site/",
+        tags: ["Vue.js", "Express.js", "Web应用", "音乐"]
+    },
+    {
         title: "太阳视运动模拟器",
         subtitle: "Solar Visual Motion Simulator",
         img: "source/img/project/2.gif",
@@ -126,3 +133,4 @@ function initProjects() {
     // 初始化项目
     projectCreate();
 }
+
